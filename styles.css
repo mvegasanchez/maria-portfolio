@@ -1,36 +1,36 @@
-/* Estilos Generales */
+/* Reset General */
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: Arial, sans-serif; background-color: #f0f4f8; color: #333; }
-.container { max-width: 900px; margin: 20px auto; padding: 20px; background: #fff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); }
+body { font-family: 'Arial', sans-serif; background-color: #f4f6f9; color: #333; display: flex; justify-content: center; }
 
-/* Estilos para el Header */
-.header { text-align: center; padding: 20px; border-bottom: 2px solid #3498db; }
-.header h1 { font-size: 2.5em; color: #3498db; }
-.header h2 { font-size: 1.2em; color: #2c3e50; margin-top: 5px; }
+/* Contenedor */
+.container { max-width: 800px; margin: 20px; padding: 20px; background: #ffffff; border-radius: 8px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); }
 
-/* Secciones Generales */
-.section { margin: 20px 0; }
-.section h3 { font-size: 1.5em; color: #3498db; border-left: 5px solid #3498db; padding-left: 10px; margin-bottom: 10px; }
+/* Encabezado */
+.header { text-align: center; margin-bottom: 20px; }
+.header h1 { font-size: 2.5em; color: #3498db; margin-bottom: 5px; }
+.header h2 { font-size: 1.2em; color: #555; }
+
+/* Secciones */
+.section { margin-top: 30px; }
+.section h3 { font-size: 1.8em; color: #3498db; text-align: center; margin-bottom: 10px; border-bottom: 2px solid #3498db; padding-bottom: 5px; }
 
 /* Contacto */
-.contact-info { display: flex; flex-wrap: wrap; justify-content: space-between; }
-.contact-item { flex: 1; padding: 10px; font-size: 1em; }
+.contact-info { display: flex; flex-direction: column; align-items: center; margin-top: 10px; }
+.contact-item { font-size: 1em; margin-bottom: 8px; }
 .contact-item a { color: #3498db; text-decoration: none; }
 
 /* Skills y Languages */
-.skills, .languages { display: flex; flex-wrap: wrap; gap: 10px; }
-.skill-item, .language-item { padding: 8px 12px; background-color: #ecf0f1; border-radius: 20px; color: #3498db; font-weight: bold; }
+.skills-list, .languages-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 10px; }
+.skill-item, .language-item { background: #ecf0f1; padding: 8px 15px; border-radius: 20px; color: #3498db; font-weight: bold; }
 
 /* Experiencia y Educación */
-.job, .education-item { margin-bottom: 15px; }
+.job, .education-item { margin-top: 15px; padding: 10px; background-color: #f9f9f9; border-radius: 6px; }
 .job h4, .education-item h4 { font-size: 1.2em; color: #2c3e50; }
-.job ul, .education-item p { margin: 5px 0; }
+.job ul { margin-top: 5px; padding-left: 20px; list-style: square; }
 
 /* Animaciones */
-.fade-in { opacity: 0; animation: fadeIn 1s ease forwards; }
-.slide-up { opacity: 0; transform: translateY(30px); animation: slideUp 1s ease forwards; }
+.fade-in { opacity: 0; animation: fadeIn 1.2s ease forwards; }
+.slide-up { opacity: 0; transform: translateY(20px); animation: slideUp 1.2s ease forwards; }
 
-/* Definición de animaciones */
 @keyframes fadeIn { to { opacity: 1; } }
 @keyframes slideUp { to { opacity: 1; transform: translateY(0); } }
-
