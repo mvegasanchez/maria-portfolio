@@ -2,35 +2,31 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Arial', sans-serif; background-color: #f4f6f9; color: #333; display: flex; justify-content: center; }
 
-/* Contenedor */
 .container { max-width: 800px; margin: 20px; padding: 20px; background: #ffffff; border-radius: 8px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); }
 
 /* Encabezado */
 .header { text-align: center; margin-bottom: 20px; }
 .header h1 { font-size: 2.5em; color: #3498db; margin-bottom: 5px; }
-.header h2 { font-size: 1.2em; color: #555; }
+.header h2 { font-size: 1.5em; color: #555; }
 
 /* Secciones */
-.section { margin-top: 30px; }
-.section h3 { font-size: 1.8em; color: #3498db; text-align: center; margin-bottom: 10px; border-bottom: 2px solid #3498db; padding-bottom: 5px; }
+section { margin-top: 30px; }
+
+h3 { font-size: 1.8em; color: #3498db; text-align: center; margin-bottom: 10px; border-bottom: 2px solid #3498db; padding-bottom: 5px; }
 
 /* Contacto */
-.contact-info { display: flex; flex-direction: column; align-items: center; margin-top: 10px; }
-.contact-item { font-size: 1em; margin-bottom: 8px; }
-.contact-item a { color: #3498db; text-decoration: none; }
+.contact p { font-size: 1.2em; text-align: center; color: #555; }
+.contact a { color: #3498db; text-decoration: none; }
 
-/* Skills y Languages */
-.skills-list, .languages-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 10px; }
-.skill-item, .language-item { background: #ecf0f1; padding: 8px 15px; border-radius: 20px; color: #3498db; font-weight: bold; }
+/* Skills y Idiomas */
+ul { list-style: none; padding-left: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 10px; }
+li { background-color: #ecf0f1; padding: 8px 15px; border-radius: 20px; color: #3498db; font-weight: bold; }
 
 /* Experiencia y Educación */
-.job, .education-item { margin-top: 15px; padding: 10px; background-color: #f9f9f9; border-radius: 6px; }
+.job, .education-item { background-color: #f9f9f9; padding: 15px; margin-top: 15px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
 .job h4, .education-item h4 { font-size: 1.2em; color: #2c3e50; }
-.job ul { margin-top: 5px; padding-left: 20px; list-style: square; }
+.job ul, .education-item p { margin-top: 10px; }
 
 /* Animaciones */
 .fade-in { opacity: 0; animation: fadeIn 1.2s ease forwards; }
-.slide-up { opacity: 0; transform: translateY(20px); animation: slideUp 1.2s ease forwards; }
-
 @keyframes fadeIn { to { opacity: 1; } }
-@keyframes slideUp { to { opacity: 1; transform: translateY(0); } }
