@@ -1,4 +1,4 @@
-// Añadir clase de animación a las secciones al hacer scroll
+// Agregar animación de deslizamiento en cada sección
 const sections = document.querySelectorAll('.section');
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
