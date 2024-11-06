@@ -1,32 +1,35 @@
 /* Reset General */
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Arial', sans-serif; background-color: #f4f6f9; color: #333; display: flex; justify-content: center; }
+body { font-family: 'Arial', sans-serif; background-color: #f4f6f9; color: #333; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
 
-.container { max-width: 800px; margin: 20px; padding: 20px; background: #ffffff; border-radius: 8px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); }
+/* Contenedor principal */
+.container { max-width: 900px; margin: 0 auto; background: #ffffff; border-radius: 8px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); padding: 30px; }
 
 /* Encabezado */
-.header { text-align: center; margin-bottom: 20px; }
-.header h1 { font-size: 2.5em; color: #3498db; margin-bottom: 5px; }
+.header { text-align: center; margin-bottom: 30px; }
+.header h1 { font-size: 3em; color: #3498db; margin-bottom: 5px; }
 .header h2 { font-size: 1.5em; color: #555; }
 
 /* Secciones */
 section { margin-top: 30px; }
-
-h3 { font-size: 1.8em; color: #3498db; text-align: center; margin-bottom: 10px; border-bottom: 2px solid #3498db; padding-bottom: 5px; }
+h3 { font-size: 2em; color: #3498db; text-align: center; margin-bottom: 15px; padding-bottom: 10px; border-bottom: 3px solid #3498db; }
 
 /* Contacto */
-.contact p { font-size: 1.2em; text-align: center; color: #555; }
+.contact p, .contact a { font-size: 1.2em; text-align: center; color: #555; display: block; margin-bottom: 10px; }
 .contact a { color: #3498db; text-decoration: none; }
 
+/* Perfil */
+.profile p { font-size: 1.1em; text-align: justify; line-height: 1.6; color: #555; }
+
 /* Skills y Idiomas */
-ul { list-style: none; padding-left: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 10px; }
-li { background-color: #ecf0f1; padding: 8px 15px; border-radius: 20px; color: #3498db; font-weight: bold; }
+ul { list-style: none; padding-left: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 10px; }
+li { background-color: #ecf0f1; padding: 10px 20px; border-radius: 30px; color: #3498db; font-weight: bold; }
 
 /* Experiencia y Educación */
-.job, .education-item { background-color: #f9f9f9; padding: 15px; margin-top: 15px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
+.job, .education-item { background-color: #f9f9f9; padding: 20px; margin-top: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
 .job h4, .education-item h4 { font-size: 1.2em; color: #2c3e50; }
-.job ul, .education-item p { margin-top: 10px; }
+.job ul, .education-item p { margin-top: 10px; font-size: 1.1em; color: #555; line-height: 1.6; }
 
 /* Animaciones */
-.fade-in { opacity: 0; animation: fadeIn 1.2s ease forwards; }
+.fade-in { opacity: 0; animation: fadeIn 1s ease forwards; }
 @keyframes fadeIn { to { opacity: 1; } }
