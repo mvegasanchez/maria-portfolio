@@ -4,52 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículum de María Vega</title>
-    <style>
-        /* Estilos Generales */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: Arial, sans-serif; background-color: #f0f4f8; color: #333; }
-        .container { max-width: 900px; margin: 20px auto; padding: 20px; background: #fff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); }
-
-        /* Estilos para el Header */
-        .header { text-align: center; padding: 20px; border-bottom: 2px solid #3498db; }
-        .header h1 { font-size: 2.5em; color: #3498db; }
-        .header h2 { font-size: 1.2em; color: #2c3e50; margin-top: 5px; }
-
-        /* Secciones Generales */
-        .section { margin: 20px 0; }
-        .section h3 { font-size: 1.5em; color: #3498db; border-left: 5px solid #3498db; padding-left: 10px; margin-bottom: 10px; }
-        
-        /* Contacto */
-        .contact-info { display: flex; flex-wrap: wrap; justify-content: space-between; }
-        .contact-item { flex: 1; padding: 10px; font-size: 1em; }
-        .contact-item a { color: #3498db; text-decoration: none; }
-        
-        /* Skills y Languages */
-        .skills, .languages { display: flex; flex-wrap: wrap; gap: 10px; }
-        .skill-item, .language-item { padding: 8px 12px; background-color: #ecf0f1; border-radius: 20px; color: #3498db; font-weight: bold; }
-
-        /* Experiencia y Educación */
-        .job, .education-item { margin-bottom: 15px; }
-        .job h4, .education-item h4 { font-size: 1.2em; color: #2c3e50; }
-        .job ul, .education-item p { margin: 5px 0; }
-
-        /* Animaciones */
-        .fade-in { opacity: 0; animation: fadeIn 1s ease forwards; }
-        .slide-up { opacity: 0; transform: translateY(30px); animation: slideUp 1s ease forwards; }
-
-        /* Definición de animaciones */
-        @keyframes fadeIn { to { opacity: 1; } }
-        @keyframes slideUp { to { opacity: 1; transform: translateY(0); } }
-    </style>
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container fade-in">
+    <div class="container">
         <div class="header">
             <h1>MARÍA VEGA</h1>
             <h2>Administrador de Sistemas y Redes</h2>
         </div>
 
-        <div class="section contact-info slide-up">
+        <div class="section contact-info">
             <h3>Contacto</h3>
             <div class="contact-item">📞 +34 690 64 36 30</div>
             <div class="contact-item">📧 <a href="mailto:vegasanchezmaria2004@gmail.com">vegasanchezmaria2004@gmail.com</a></div>
@@ -57,12 +22,12 @@
             <div class="contact-item">🌐 <a href="https://www.reallygreatsite.com" target="_blank">www.reallygreatsite.com</a></div>
         </div>
 
-        <div class="section profile slide-up">
+        <div class="section profile">
             <h3>Perfil</h3>
             <p>Apasionada por la tecnología, soy una persona curiosa y comprometida con el aprendizaje continuo. Tengo sólidas habilidades en sistemas informáticos, me adapto rápido a nuevos entornos y disfruto de los desafíos que impulsan mi desarrollo. Busco aportar valor con soluciones innovadoras y eficientes, y fortalecer tanto mis competencias técnicas como mi capacidad de colaboración en equipo.</p>
         </div>
 
-        <div class="section skills slide-up">
+        <div class="section skills">
             <h3>Skills</h3>
             <div class="skills">
                 <div class="skill-item">Comunicación Efectiva</div>
@@ -74,7 +39,7 @@
             </div>
         </div>
 
-        <div class="section languages slide-up">
+        <div class="section languages">
             <h3>Idiomas</h3>
             <div class="languages">
                 <div class="language-item">Castellano (Nativo)</div>
@@ -82,7 +47,7 @@
             </div>
         </div>
 
-        <div class="section experience slide-up">
+        <div class="section experience">
             <h3>Experiencia Laboral</h3>
             <div class="job">
                 <h4>DANTIA Tecnología S.L (Marzo 2022 - Julio 2022)</h4>
@@ -104,7 +69,7 @@
             </div>
         </div>
 
-        <div class="section education slide-up">
+        <div class="section education">
             <h3>Datos Académicos</h3>
             <div class="education-item">
                 <h4>IES Romero Vargas (2023 - 2025)</h4>
@@ -121,18 +86,7 @@
         </div>
     </div>
 
-    <script>
-        // Añadir clase de animación a las secciones al hacer scroll
-        const sections = document.querySelectorAll('.slide-up');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-in');
-                }
-            });
-        }, { threshold: 0.1 });
-
-        sections.forEach(section => observer.observe(section));
-    </script>
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
